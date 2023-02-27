@@ -1,0 +1,81 @@
+
+<html>
+<head>
+  <link rel="stylesheet" href="aboutpage.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head> 
+
+<center><h1 style="font-size:50px;font-family: Felix Titling;color:aqua">ABOUT ME</h1> </center><br><br>
+<div><p class="line-1 anim-typewriter"><b>Hi..I'm DEEPIKA pursuing my bachelor's degree in <br>INFORMATION TECHNOLOGY </b></p><br><br></div>
+<center>
+  
+  <body>
+    <br>
+  <br>
+<div class="bg-text">
+   <p style="color:aqua">Career Objective<br></p>
+  <p style="font-size:20px;font-family:Footlight MT Light; ">Looking for a challenging role in a dynamic stable organisation<br> to utilize
+    my technical and analytical skills for<br> the growth of the organisation</p><hr>
+    <!------------------------inside box----------------------->
+      <div class="tab-titles">
+        <p class="links active-link" onclick="opentab('Personal details')">Personal details</p>
+        <p class="links" onclick="opentab('Educational Details')">Educational Details</p>
+        <p class="links" onclick="opentab('Technical Skills')">Technical Skills</p>
+        <p class="links" onclick="opentab('Areas of Interest')">Areas of Interest</p>
+        
+    </div>
+    
+  
+    <div class="tab-contents active-tab" id="Personal details">
+        <ul>
+            <li> <span>Mobile:</span><br>6369507941</li>
+            <li> <span>Email:</span><br>deepikarangasamy18@gmail.com<li>deepika.it20@bitsathy.ac.in</li></li>
+            <li> <span>Address:</span><br>5/11 TVK Nagar,Velliangadu,Tiruppur</span><br></li>
+
+        </ul>
+    </div>
+    <div class="tab-contents active-tab" id="Educational Details">
+      <ul>
+          <li> <span>UG degree</span><br>Bannari Amman Institute Of Technology(2020-2024)<br>-CGPA:8.73(current 6th sem)</li>
+          <li> <span>SSLC,HSLC</span><br>Vivekananda Vidhyalaya Matriculation Higher Secondary School</li>
+          <li>-SSLC:92%</li>
+          <li>-HSLC:86%</li>
+
+      </ul>
+  </div>
+  <div class="tab-contents active-tab" id="Technical Skills">
+    <ul>
+        <li>C,C++(intermediate)</li>
+        <li> Python,Java(basics)</li>
+        <li>html,css </li>
+        <li>js,react js</li>
+
+    </ul>
+</div>
+<div class="tab-contents active-tab" id="Areas of Interest">
+  <ul>
+      <li>Web application development</li>
+      <li> Full stack development</li>
+      <li>UI/UX designing</li>
+  </ul>
+</div>
+
+</div>
+<script>
+  var links=document.getElementsByClassName("links");
+  var tabcontents=document.getElementsByClassName("tab-contents");
+   
+  function opentab(tabname){
+     for(link of links){
+         link.classList.remove("active-link");
+     }
+
+     for(tabcontent of tabcontents){
+         tabcontent.classList.remove("active-tab");
+   }
+   event.currentTarget.classList.add("active-link");
+   document.getElementById(tabname).classList.add("active-tab");
+ }
+</script>
+</body>
+</html>
